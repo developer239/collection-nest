@@ -7,6 +7,7 @@
     "lerna:bootstrap": "lerna bootstrap",
     "lerna:version": "lerna version",
     "lerna:publish": "lerna publish from-package",
+    "lerna:build": "lerna exec -- tsc --outDir lib",
     "format": "prettier --write '*/**/*.{ts,md,json}'",
     "lint:ts": "eslint --ext .ts packages"
   },

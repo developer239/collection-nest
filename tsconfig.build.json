@@ -11,8 +11,7 @@
     "noLib": false,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    "strict": true,
-    "outDir": "./lib"
+    "strict": true
   },
   "exclude": ["node_modules", "dist"]
 }
