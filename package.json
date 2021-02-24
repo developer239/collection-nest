@@ -11,6 +11,8 @@
     "lint:ts": "eslint --ext .ts packages"
   },
   "devDependencies": {
+    "@commitlint/cli": "^12.0.0",
+    "@linters/commitlint-config": "^1.5.1",
     "@linters/eslint-config-jest": "^1.8.1",
     "@linters/eslint-config-node": "^1.8.4",
     "@linters/eslint-config-typescript": "^1.14.4",
@@ -18,6 +20,8 @@
     "eslint": "^7.20.0",
     "eslint-config-prettier": "^8.0.0",
     "eslint-plugin-import": "^2.22.1",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.5.4",
     "prettier": "^2.2.1"
   }
 }
