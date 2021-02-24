@@ -2,5 +2,10 @@
   "name": "collection-nest",
   "repository": "https://github.com/developer239/collection-nest.git",
   "author": "michaljarnot <m.jarnot@yahoo.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "lerna:bootstrap": "lerna bootstrap",
+    "lerna:version": "lerna version",
+    "lerna:publish": "lerna publish from-package"
+  }
 }
