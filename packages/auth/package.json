@@ -1,6 +1,6 @@
 {
   "name": "@collection-nest/auth",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "main": "lib/index.js",
   "directories": {
@@ -29,6 +29,6 @@
     "typescript": "^4.2.2"
   },
   "dependencies": {
-    "@collection-nest/environment": "^0.1.0"
+    "@collection-nest/environment": "^0.1.1"
   }
 }
