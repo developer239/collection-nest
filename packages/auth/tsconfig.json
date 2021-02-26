@@ -1,10 +1,4 @@
 {
   "extends": "../../tsconfig.json",
-  "include": ["src/**/*"],
-  "compilerOptions": {
-    "paths": {
-      "@collection-nest/*": ["packages/*/lib/index"],
-      "auth/*": ["packages/auth/src/*"]
-    }
-  }
+  "include": ["src/**/*"]
 }
