@@ -1,18 +1,18 @@
 {
   "compilerOptions": {
-    "module": "es2015",
+    "module": "es6",
+    "target": "es6",
+    "strict": true,
     "moduleResolution": "node",
+    "baseUrl": "./",
     "declaration": true,
     "removeComments": true,
+    "esModuleInterop": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "target": "es6",
-    "sourceMap": false,
-    "baseUrl": "./",
-    "noLib": false,
     "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "strict": true,
+    "sourceMap": false,
+    "noLib": false,
     "paths": {
       "auth/*": ["packages/auth/src/*"],
       "environment/*": ["packages/environment/src/*"]
@@ -24,5 +24,5 @@
       }
     ]
   },
-  "exclude": ["node_modules", "dist"]
+  "exclude": ["node_modules", "lib"]
 }
