@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "module": "es2015",
     "declaration": true,
     "removeComments": true,
     "emitDecoratorMetadata": true,
@@ -11,7 +11,11 @@
     "noLib": false,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    "strict": true
+    "strict": true,
+    "paths": {
+      "auth/*": ["packages/auth/src/*"],
+      "environment/*": ["packages/environment/src/*"]
+    }
   },
   "exclude": ["node_modules", "dist"]
 }
