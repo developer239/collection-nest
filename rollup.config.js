@@ -1,5 +1,4 @@
 import cleaner from 'rollup-plugin-cleaner';
-import commonjs from 'rollup-plugin-commonjs'
 import typescript from 'rollup-plugin-typescript2'
 
 export default {
@@ -14,13 +13,8 @@ export default {
         './lib'
       ]
     }),
-    commonjs({ ignore: ['conditional-runtime-dependency'] }),
     typescript({
-      clean: true,
       tsconfig: 'tsconfig.build.json',
-      tsconfigOverride: {
-        module: 'es2015',
-      },
     }),
   ],
 }
