@@ -1,5 +1,5 @@
+import cleaner from 'rollup-plugin-cleaner';
 import commonjs from 'rollup-plugin-commonjs'
-import progress from 'rollup-plugin-progress'
 import typescript from 'rollup-plugin-typescript2'
 
 export default {
@@ -9,7 +9,11 @@ export default {
     format: 'es',
   },
   plugins: [
-    progress(),
+    cleaner({
+      targets: [
+        './lib'
+      ]
+    }),
     commonjs({ ignore: ['conditional-runtime-dependency'] }),
     typescript({
       clean: true,
