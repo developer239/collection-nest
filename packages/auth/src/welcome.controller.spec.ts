@@ -1,6 +1,6 @@
 import { TestingModule, Test } from '@nestjs/testing'
-import { WelcomeController } from './welcome.controller'
-import { WelcomeModule } from './welcome.module'
+import { WelcomeController } from 'auth/welcome.controller'
+import { WelcomeModule } from 'auth/welcome.module'
 
 describe('[controller] HelloController', () => {
   let welcomeController: WelcomeController

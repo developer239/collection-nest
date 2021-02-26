@@ -3,7 +3,8 @@
   "compilerOptions": {
     "paths": {
       "@collection-nest/*": ["packages/*/lib/index"],
-      "auth/*": ["packages/auth/src/*"]
+      "auth/*": ["packages/auth/src/*"],
+      "environment/*": ["packages/environment/src/*"]
     }
   }
 }

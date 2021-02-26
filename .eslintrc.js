@@ -4,5 +4,6 @@ module.exports = {
     '@linters/eslint-config-typescript',
     '@linters/eslint-config-jest',
     'prettier',
-  ]
+  ],
+  ignorePatterns: ['lib'],
 }
