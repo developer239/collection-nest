@@ -1,8 +1,9 @@
 import { Module } from '@nestjs/common'
-import { WelcomeController } from './welcome.controller';
+import { EnvironmentModule } from '@collection-nest/environment'
+import { WelcomeController } from 'auth/welcome.controller'
 
 @Module({
-  imports: [],
+  imports: [EnvironmentModule],
   controllers: [WelcomeController],
   providers: [],
 })

@@ -1,8 +1,11 @@
+const { pathsToModuleNameMapper } = require('ts-jest/utils')
+const { compilerOptions } = require('./tsconfig')
+
 module.exports = {
   preset: 'ts-jest',
   testEnvironment: 'node',
-  moduleNameMapper: {
-    '^@collection-nest/(.*)$': '<rootDir>/packages/$1/src'
-  },
+  roots: ['<rootDir>'],
+  modulePaths: ['<rootDir>'],
+  moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths),
   modulePathIgnorePatterns: ['lib', 'dist'],
 }

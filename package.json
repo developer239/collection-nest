@@ -8,9 +8,10 @@
     "lerna:version": "lerna version",
     "lerna:publish": "lerna publish from-package",
     "lerna:build": "lerna exec -- tsc --outDir lib",
+    "lerna:build:watch": "lerna exec -- tsc --outDir lib -w",
     "format": "prettier --write '*/**/*.{ts,md,json}'",
     "lint:ts": "eslint --ext .ts packages",
-    "test": "jest"
+    "test": "jest --no-cache"
   },
   "devDependencies": {
     "@commitlint/cli": "^12.0.0",
