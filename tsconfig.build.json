@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "module": "es2015",
+    "moduleResolution": "node",
     "declaration": true,
     "removeComments": true,
     "emitDecoratorMetadata": true,
@@ -15,7 +16,13 @@
     "paths": {
       "auth/*": ["packages/auth/src/*"],
       "environment/*": ["packages/environment/src/*"]
-    }
+    },
+    "plugins": [
+      {
+        "transform": "@zerollup/ts-transform-paths",
+        "exclude": ["*"]
+      }
+    ]
   },
   "exclude": ["node_modules", "dist"]
 }
