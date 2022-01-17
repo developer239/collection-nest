@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.2](https://github.com/developer239/collection-nest/compare/@collection-nest/testing@0.1.1...@collection-nest/testing@0.1.2) (2022-01-17)
+
+
+### Bug Fixes
+
+* make all dependencies peer dependencies ([cff1ee7](https://github.com/developer239/collection-nest/commit/cff1ee7ec96396825d8463f44bb03789d2d6fa74))
+
+
+
+
+
 ## [0.1.1](https://github.com/developer239/collection-nest/compare/@collection-nest/testing@0.1.0...@collection-nest/testing@0.1.1) (2022-01-17)
 
 

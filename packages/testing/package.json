@@ -1,6 +1,6 @@
 {
   "name": "@collection-nest/testing",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "MIT",
   "main": "lib/index.js",
   "directories": {
@@ -20,8 +20,8 @@
   "peerDependencies": {
     "@collection-nest/database": "^0.1.3",
     "@collection-nest/environment": "^0.5.2",
-    "@nestjs/config": "1.1.6",
     "@nestjs/common": ">=8.0.0",
+    "@nestjs/config": "1.1.6",
     "@nestjs/testing": "8.2.5",
     "class-transformer": "0.5.1",
     "typeorm": "0.2.41"
@@ -29,8 +29,8 @@
   "devDependencies": {
     "@collection-nest/database": "^0.1.3",
     "@collection-nest/environment": "^0.5.2",
-    "@nestjs/config": "1.1.6",
     "@nestjs/common": "8.0.0",
+    "@nestjs/config": "1.1.6",
     "@nestjs/testing": "8.2.5",
     "class-transformer": "0.5.1",
     "typeorm": "0.2.41",
