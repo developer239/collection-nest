@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.1](https://github.com/developer239/collection-nest/compare/@collection-nest/testing@0.1.0...@collection-nest/testing@0.1.1) (2022-01-17)
+
+
+### Bug Fixes
+
+* make @nestjs/testing peer dependency ([03027cd](https://github.com/developer239/collection-nest/commit/03027cdd1b946f047ce68ad0d90be65eb28c7de3))
+
+
+
+
+
 # 0.1.0 (2022-01-17)
 
 
