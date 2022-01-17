@@ -28,7 +28,7 @@ jobs:
 
       - name: Install Dependencies
         if: steps.cache.outputs.cache-hit != 'true'
-        run: yarn install
+        run: yarn install --frozen-lockfile
 
       - name: Config git user
         if: contains(github.event.commits[0].message, '[skip-ci]') == false
