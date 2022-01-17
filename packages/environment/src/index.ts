@@ -1,1 +1,1 @@
-export * from 'environment/environment.module'
+export * from 'environment/lib/environment.module'

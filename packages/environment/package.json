@@ -18,7 +18,8 @@
     "access": "public"
   },
   "dependencies": {
-    "@nestjs/config": "^0.6.3"
+    "@nestjs/config": "^0.6.3",
+    "joi": "^17.5.0"
   },
   "peerDependencies": {
     "@nestjs/common": "^7.6.13"
