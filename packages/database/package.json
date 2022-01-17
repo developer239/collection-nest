@@ -1,6 +1,6 @@
 {
-  "name": "@collection-nest/environment",
-  "version": "0.4.1",
+  "name": "@collection-nest/database",
+  "version": "0.0.0",
   "license": "MIT",
   "main": "lib/index.js",
   "directories": {
@@ -18,7 +18,12 @@
     "access": "public"
   },
   "dependencies": {
-    "@nestjs/config": "1.1.6"
+    "@collection-nest/environment": "^0.4.1",
+    "@nestjs/config": "1.1.6",
+    "@nestjs/typeorm": "8.0.2",
+    "pg": "8.7.1",
+    "pg-connection-string": "2.5.0",
+    "typeorm": "0.2.41"
   },
   "peerDependencies": {
     "@nestjs/common": ">=8.0.0"
