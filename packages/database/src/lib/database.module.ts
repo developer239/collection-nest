@@ -28,14 +28,14 @@ export class DatabaseModule {
 
             return {
               type: 'postgres',
-              host: postgresUrl.host,
+              host: postgresUrl.host!,
               port: Number(postgresUrl.port),
               username: postgresUrl.user,
               password: postgresUrl.password,
-              database: postgresUrl.database,
+              database: postgresUrl.database!,
               synchronize: true,
               autoLoadEntities: true,
-            } as any // TODO: 🤯 figure out why it suddenly wants aurora types
+            }
           },
         }),
       ],
