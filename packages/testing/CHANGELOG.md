@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.3](https://github.com/developer239/collection-nest/compare/@collection-nest/testing@0.1.2...@collection-nest/testing@0.1.3) (2022-01-17)
+
+
+### Bug Fixes
+
+* make transformer dependency again ([8310e31](https://github.com/developer239/collection-nest/commit/8310e31a4b1de2e62747a1f8e1b49d113d013594))
+
+
+
+
+
 ## [0.1.2](https://github.com/developer239/collection-nest/compare/@collection-nest/testing@0.1.1...@collection-nest/testing@0.1.2) (2022-01-17)
 
 
