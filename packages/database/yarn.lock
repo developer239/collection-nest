@@ -2,13 +2,6 @@
 # yarn lockfile v1
 
 
-"@collection-nest/environment@^0.5.0":
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@collection-nest/environment/-/environment-0.5.0.tgz#35396f29a05a580113479cca1dbd652559d8f57c"
-  integrity sha512-1p9VO0zP6Ltm5A7eQFIu/RBAnSx7u4BhSA6wYONxhxgf/OkVFYYR+fPsGjAiJDhPNP//1xh0nwibPrGNQRFokg==
-  dependencies:
-    "@nestjs/config" "1.1.6"
-
 "@nestjs/common@8.0.0":
   version "8.0.0"
   resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-8.0.0.tgz#b87499cb6cd9ff0313a247da70ea5c5a16011fd7"
