@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.1](https://github.com/developer239/collection-nest/compare/@collection-nest/environment@0.2.0...@collection-nest/environment@0.2.1) (2022-01-17)
+
+
+### Bug Fixes
+
+* add forgotten export ([1f7c193](https://github.com/developer239/collection-nest/commit/1f7c193ec966fbc01c8bff08a1acbee3b5a7e5d6))
+
+
+
+
+
 # [0.2.0](https://github.com/developer239/collection-nest/compare/@collection-nest/environment@0.1.1...@collection-nest/environment@0.2.0) (2022-01-17)
 
 
