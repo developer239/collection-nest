@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.3](https://github.com/developer239/collection-nest/compare/@collection-nest/database@0.1.2...@collection-nest/database@0.1.3) (2022-01-17)
+
+**Note:** Version bump only for package @collection-nest/database
+
+
+
+
+
 ## [0.1.2](https://github.com/developer239/collection-nest/compare/@collection-nest/database@0.1.1...@collection-nest/database@0.1.2) (2022-01-17)
 
 

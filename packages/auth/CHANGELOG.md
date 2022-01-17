@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.4](https://github.com/developer239/collection-nest/compare/@collection-nest/auth@0.3.3...@collection-nest/auth@0.3.4) (2022-01-17)
+
+
+### Bug Fixes
+
+* auth module lockfile ([3de4264](https://github.com/developer239/collection-nest/commit/3de4264359d84df4440f1ecf3d3e5ac24417c7ed))
+* lock files in auth and testing modules ([7b86963](https://github.com/developer239/collection-nest/commit/7b86963eb9c0c19387808376ef970dec6ea24972))
+
+
+
+
+
 ## [0.3.3](https://github.com/developer239/collection-nest/compare/@collection-nest/auth@0.3.2...@collection-nest/auth@0.3.3) (2022-01-17)
 
 **Note:** Version bump only for package @collection-nest/auth
