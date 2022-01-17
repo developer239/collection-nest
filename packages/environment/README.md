@@ -6,7 +6,7 @@ general.
 ## Install
 
 ```
-yarn install @nest-collection/environment
+yarn add @collection-nest/environment
 ```
 
 ## Example

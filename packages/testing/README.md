@@ -5,7 +5,7 @@ Testing helper for your Nest.js project.
 ## Install
 
 ```
-yarn install @nest-collection/testing
+yarn add @collection-nest/testing
 ```
 
 ## Example

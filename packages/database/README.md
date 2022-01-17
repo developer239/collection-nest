@@ -8,7 +8,7 @@ include other ORMs as well.
 ## Install
 
 ```
-yarn install @nest-collection/database pg pg-connection-string @types/pg-connection-string typeorm
+yarn add @collection-nest/database pg pg-connection-string @types/pg-connection-string typeorm
 ```
 
 ## Example
