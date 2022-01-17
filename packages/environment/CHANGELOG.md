@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/developer239/collection-nest/compare/@collection-nest/environment@0.3.0...@collection-nest/environment@0.4.0) (2022-01-17)
+
+
+### Features
+
+* improve build ([357dfe1](https://github.com/developer239/collection-nest/commit/357dfe13554728bf0dd67097020c3b1d5a727b4d))
+
+
+
+
+
 # [0.3.0](https://github.com/developer239/collection-nest/compare/@collection-nest/environment@0.2.1...@collection-nest/environment@0.3.0) (2022-01-17)
 
 
