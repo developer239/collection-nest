@@ -1,2 +1,2 @@
-export * from 'environment/lib/environment.module'
-export * from 'environment/lib/environment.service'
+export * from './lib/environment.module'
+export * from './lib/environment.service'

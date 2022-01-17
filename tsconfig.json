@@ -2,9 +2,7 @@
   "extends": "./tsconfig.build.json",
   "compilerOptions": {
     "paths": {
-      "@collection-nest/*": ["packages/*/src/index"],
-      "auth/*": ["packages/auth/src/*"],
-      "environment/*": ["packages/environment/src/*"]
+      "@collection-nest/*": ["packages/*/src/index"]
     }
   }
 }

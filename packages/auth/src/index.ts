@@ -1,1 +1,1 @@
-export * from 'auth/welcome.module'
+export * from './lib/welcome.module'

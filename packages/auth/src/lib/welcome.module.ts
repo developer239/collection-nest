@@ -1,7 +1,7 @@
 /* eslint-disable security/detect-object-injection */
 import { Module } from '@nestjs/common'
 import { EnvironmentModule } from '@collection-nest/environment'
-import { WelcomeController } from 'auth/welcome.controller'
+import { WelcomeController } from './welcome.controller'
 
 const envFilePath = {
   production: '.env.production',

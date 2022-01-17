@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es2015",
+    "target": "es5",
     "module": "esnext",
     "strict": true,
     "moduleResolution": "node",
@@ -12,17 +12,7 @@
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
     "sourceMap": false,
-    "noLib": false,
-    "paths": {
-      "auth/*": ["packages/auth/src/*"],
-      "environment/*": ["packages/environment/src/*"]
-    },
-    "plugins": [
-      {
-        "transform": "@zerollup/ts-transform-paths",
-        "exclude": ["*"]
-      }
-    ]
+    "noLib": false
   },
   "exclude": ["node_modules", "lib"]
 }
