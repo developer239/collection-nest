@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/developer239/collection-nest/compare/@collection-nest/environment@0.4.1...@collection-nest/environment@0.5.0) (2022-01-17)
+
+
+### Features
+
+* add database module ([490ff6e](https://github.com/developer239/collection-nest/commit/490ff6e77ca0a79df3237082466eb2a52930e533))
+
+
+
+
+
 ## [0.4.1](https://github.com/developer239/collection-nest/compare/@collection-nest/environment@0.4.0...@collection-nest/environment@0.4.1) (2022-01-17)
 
 **Note:** Version bump only for package @collection-nest/environment

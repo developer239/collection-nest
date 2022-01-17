@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.2](https://github.com/developer239/collection-nest/compare/@collection-nest/auth@0.3.1...@collection-nest/auth@0.3.2) (2022-01-17)
+
+
+### Bug Fixes
+
+* lockfile ([644da49](https://github.com/developer239/collection-nest/commit/644da49a1532b932f34ed5a4463de3a429989504))
+
+
+
+
+
 ## [0.3.1](https://github.com/developer239/collection-nest/compare/@collection-nest/auth@0.3.0...@collection-nest/auth@0.3.1) (2022-01-17)
 
 **Note:** Version bump only for package @collection-nest/auth
