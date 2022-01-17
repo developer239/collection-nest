@@ -3,6 +3,12 @@
 Wrapper around `@nestjs/config` so that we can have more control over environment variables and project configuration in
 general.
 
+## Install
+
+```
+yarn install @nest-collection/environment
+```
+
 ## Example
 
 ```typescript

@@ -5,6 +5,12 @@ include other ORMs as well.
 
 **This module is dependent on `@collection-nest/environment`.**
 
+## Install
+
+```
+yarn install @nest-collection/database pg pg-connection-string @types/pg-connection-string typeorm
+```
+
 ## Example
 
 ```typescript
