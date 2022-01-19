@@ -2,6 +2,7 @@ import { DatabaseModule } from '@collection-nest/database'
 import { ModuleMetadata } from '@nestjs/common/interfaces'
 import { Test } from '@nestjs/testing'
 import { TestingModule } from './testing.module'
+import { EnvironmentModule } from '@collection-nest/environment'
 
 export const bootstrap = async (
   metadata: ModuleMetadata,
@@ -9,9 +10,10 @@ export const bootstrap = async (
 ) => {
   const testingModule = await Test.createTestingModule({
     imports: [
-      DatabaseModule.register({
-        environmentConfig: { envFilePath },
+      EnvironmentModule.register({
+        envFilePath,
       }),
+      DatabaseModule.register({}),
       TestingModule,
       ...(metadata.imports ? metadata.imports : []),
     ],
