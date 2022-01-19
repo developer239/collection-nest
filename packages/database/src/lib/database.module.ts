@@ -22,7 +22,7 @@ export class DatabaseModule {
       imports: [
         TypeOrmModule.forRootAsync({
           imports: [ConfigModule],
-          inject: [ConfigModule],
+          inject: [ConfigService],
           useFactory: (configService: ConfigService) => {
             try {
               const databaseUrl = configService.get<string>('DATABASE_URL')
