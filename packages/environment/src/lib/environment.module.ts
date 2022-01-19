@@ -2,6 +2,13 @@ import { Module } from '@nestjs/common'
 import { ConfigModule } from '@nestjs/config'
 import { EnvironmentService } from './environment.service'
 
+const filePath = {
+  production: '.env.production',
+  development: '.env.development',
+}
+
+const NODE_ENV = process.env.NODE_ENV as keyof typeof filePath
+
 export interface IConfig {
   envFilePath: string
   validationSchema?: any
@@ -9,13 +16,13 @@ export interface IConfig {
 
 @Module({})
 export class EnvironmentModule {
-  static register({ envFilePath, validationSchema }: IConfig) {
+  static register(config: IConfig) {
     return {
       module: EnvironmentModule,
       imports: [
         ConfigModule.forRoot({
-          envFilePath,
-          validationSchema,
+          envFilePath: config?.envFilePath ?? filePath[NODE_ENV],
+          validationSchema: config?.validationSchema ?? undefined,
         }),
       ],
       providers: [EnvironmentService],

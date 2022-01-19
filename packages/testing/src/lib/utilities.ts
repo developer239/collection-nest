@@ -13,7 +13,7 @@ export const bootstrap = async (
       EnvironmentModule.register({
         envFilePath,
       }),
-      DatabaseModule.register({}),
+      DatabaseModule.register(),
       TestingModule,
       ...(metadata.imports ? metadata.imports : []),
     ],

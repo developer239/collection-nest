@@ -5,6 +5,7 @@ import { parse } from 'pg-connection-string'
 import { ConfigModule, ConfigService } from '@nestjs/config'
 
 export interface IConfig {
+  databaseUrl?: string
   synchronize?: boolean
   autoLoadEntities?: boolean
   migrations?: string[]
@@ -12,11 +13,7 @@ export interface IConfig {
 
 @Module({})
 export class DatabaseModule {
-  static register({
-    synchronize = true,
-    autoLoadEntities = true,
-    migrations = undefined,
-  }: IConfig) {
+  static register(config?: IConfig) {
     return {
       module: DatabaseModule,
       imports: [
@@ -24,23 +21,22 @@ export class DatabaseModule {
           imports: [ConfigModule],
           inject: [ConfigService],
           useFactory: (configService: ConfigService) => {
-            try {
-              const databaseUrl = configService.get<string>('DATABASE_URL')
-              const postgresUrl = parse(databaseUrl!)
+            // TODO: validate DATABASE_URL
 
-              return {
-                type: 'postgres',
-                host: postgresUrl.host!,
-                port: Number(postgresUrl.port),
-                username: postgresUrl.user,
-                password: postgresUrl.password,
-                database: postgresUrl.database!,
-                synchronize,
-                autoLoadEntities,
-                migrations,
-              }
-            } catch (validationError) {
-              throw validationError
+            const databaseUrl =
+              config?.databaseUrl ?? configService.get<string>('DATABASE_URL')
+            const postgresUrl = parse(databaseUrl!)
+
+            return {
+              type: 'postgres',
+              host: postgresUrl.host!,
+              port: Number(postgresUrl.port),
+              username: postgresUrl.user,
+              password: postgresUrl.password,
+              database: postgresUrl.database!,
+              synchronize: config?.synchronize ?? true,
+              autoLoadEntities: config?.autoLoadEntities ?? true,
+              migrations: config?.migrations ?? undefined,
             }
           },
         }),
