@@ -1,40 +1,51 @@
 /* eslint-disable security/detect-object-injection */
-import {
-  EnvironmentModule,
-  EnvironmentService,
-  IConfig as IEnvironmentConfig,
-} from '@collection-nest/environment'
 import { Module } from '@nestjs/common'
 import { TypeOrmModule } from '@nestjs/typeorm'
 import { parse } from 'pg-connection-string'
+import { ConfigModule, ConfigService } from '@nestjs/config'
+import Joi from 'joi'
 
 export interface IConfig {
-  environmentConfig: IEnvironmentConfig
+  synchronize?: boolean
+  autoLoadEntities?: boolean
+  migrations?: string[]
 }
 
 @Module({})
 export class DatabaseModule {
-  static register({ environmentConfig }: IConfig) {
+  static register({
+    synchronize = true,
+    autoLoadEntities = true,
+    migrations = undefined,
+  }: IConfig) {
     return {
       module: DatabaseModule,
       imports: [
         TypeOrmModule.forRootAsync({
-          imports: [EnvironmentModule.register(environmentConfig)],
-          inject: [EnvironmentService],
-          useFactory: (environmentService: EnvironmentService) => {
-            const postgresUrl = parse(
-              environmentService.get<string>('DATABASE_URL')
-            )
+          imports: [ConfigModule],
+          inject: [ConfigModule],
+          useFactory: (configService: ConfigService) => {
+            try {
+              const databaseUrl = configService.get<string>('DATABASE_URL')
+              Joi.object({
+                DATABASE_URL: Joi.string().required(),
+              }).validate({ DATABASE_URL: databaseUrl })
 
-            return {
-              type: 'postgres',
-              host: postgresUrl.host!,
-              port: Number(postgresUrl.port),
-              username: postgresUrl.user,
-              password: postgresUrl.password,
-              database: postgresUrl.database!,
-              synchronize: true,
-              autoLoadEntities: true,
+              const postgresUrl = parse(databaseUrl!)
+
+              return {
+                type: 'postgres',
+                host: postgresUrl.host!,
+                port: Number(postgresUrl.port),
+                username: postgresUrl.user,
+                password: postgresUrl.password,
+                database: postgresUrl.database!,
+                synchronize,
+                autoLoadEntities,
+                migrations,
+              }
+            } catch (validationError) {
+              throw validationError
             }
           },
         }),
