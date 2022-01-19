@@ -1,14 +1,14 @@
 import { Module } from '@nestjs/common'
 import { ConfigModule } from '@nestjs/config'
 
-const envFilePath = {
+const filePath = {
   production: '.env.production',
   development: '.env.development',
+  test: '../../../.env.test',
 }
 
-const NODE_ENV = process.env.NODE_ENV as keyof typeof envFilePath
-
 export interface IConfig {
+  NODE_ENV?: string
   envFilePath?: string
   validationSchema?: any
 }
@@ -16,11 +16,19 @@ export interface IConfig {
 @Module({})
 export class EnvironmentModule {
   static register(config?: IConfig) {
+    const defaultEnvFilePath = config?.NODE_ENV
+      ? filePath[config?.NODE_ENV as keyof typeof filePath]
+      : undefined
+    const envFilePath = config?.envFilePath ?? defaultEnvFilePath
+
+    // TODO: improve error handling
+    if (!envFilePath) {
+      throw Error('Invalid .env file path')
+    }
+
     return {
       module: EnvironmentModule,
-      imports: [
-        ConfigModule.forRoot({ envFilePath: envFilePath[NODE_ENV], ...config }),
-      ],
+      imports: [ConfigModule.forRoot({ envFilePath, ...config })],
       providers: [],
       exports: [],
     }

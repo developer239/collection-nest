@@ -6,12 +6,13 @@ import { EnvironmentModule } from '@collection-nest/environment'
 
 export const bootstrap = async (
   metadata: ModuleMetadata,
-  envFilePath = '../../../.env.test'
+  envFilePath?: string
 ) => {
   const testingModule = await Test.createTestingModule({
     imports: [
       EnvironmentModule.register({
         envFilePath,
+        NODE_ENV: 'test',
       }),
       DatabaseModule.register(),
       TestingModule,
