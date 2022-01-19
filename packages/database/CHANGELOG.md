@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/developer239/collection-nest/compare/@collection-nest/database@0.4.0...@collection-nest/database@0.5.0) (2022-01-19)
+
+
+### Features
+
+* simplify databse module ([548999f](https://github.com/developer239/collection-nest/commit/548999f5bd915baab493f6ea1276ecf6c8f0a5ae))
+
+
+
+
+
 # [0.4.0](https://github.com/developer239/collection-nest/compare/@collection-nest/database@0.3.0...@collection-nest/database@0.4.0) (2022-01-19)
 
 
