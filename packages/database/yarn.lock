@@ -2,6 +2,13 @@
 # yarn lockfile v1
 
 
+"@collection-nest/environment@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@collection-nest/environment/-/environment-0.6.0.tgz#714a163031c20f495a11e495006cda8f5ff41571"
+  integrity sha512-bnWB8+Sg5Kb+1qug7IoJsBvGLByG5KrMAzXibFFsOYRPs2CO3AmpErunZbwyWpp6IFjn05ZMi4mF6JF+NhZOzg==
+  dependencies:
+    "@nestjs/config" "1.1.6"
+
 "@hapi/hoek@^9.0.0":
   version "9.2.1"
   resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-9.2.1.tgz#9551142a1980503752536b5050fd99f4a7f13b17"
@@ -92,7 +99,7 @@ iterare@1.2.1:
   resolved "https://registry.yarnpkg.com/iterare/-/iterare-1.2.1.tgz#139c400ff7363690e33abffa33cbba8920f00042"
   integrity sha512-RKYVTCjAnRthyJes037NX/IiqeidgN1xc3j1RjFfECFp28A1GVwK9nA+i0rJPaHqSZwygLzRnFlzUuHFoWWy+Q==
 
-joi@*, joi@^17.5.0:
+joi@*:
   version "17.5.0"
   resolved "https://registry.yarnpkg.com/joi/-/joi-17.5.0.tgz#7e66d0004b5045d971cf416a55fb61d33ac6e011"
   integrity sha512-R7hR50COp7StzLnDi4ywOXHrBrgNXuUUfJWIR5lPY5Bm/pOD3jZaTwpluUXVLRWcoWZxkrHBBJ5hLxgnlehbdw==

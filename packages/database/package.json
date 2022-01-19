@@ -18,10 +18,10 @@
     "access": "public"
   },
   "dependencies": {
-    "@nestjs/config": "1.1.6",
-    "joi": "^17.5.0"
+    "@nestjs/config": "1.1.6"
   },
   "peerDependencies": {
+    "@collection-nest/environment": "^0.6.0",
     "@nestjs/common": ">=8.0.0",
     "@nestjs/typeorm": "8.0.2",
     "pg": "8.7.1",
@@ -29,6 +29,7 @@
     "typeorm": "0.2.41"
   },
   "devDependencies": {
+    "@collection-nest/environment": "^0.6.0",
     "@nestjs/common": "8.0.0",
     "@nestjs/typeorm": "8.0.2",
     "@types/joi": "^17.2.3",

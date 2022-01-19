@@ -2,7 +2,10 @@
 import { Module } from '@nestjs/common'
 import { TypeOrmModule } from '@nestjs/typeorm'
 import { parse } from 'pg-connection-string'
-import { ConfigModule, ConfigService } from '@nestjs/config'
+import {
+  EnvironmentModule,
+  EnvironmentService,
+} from '@collection-nest/environment'
 
 export interface IConfig {
   databaseUrl?: string
@@ -18,13 +21,14 @@ export class DatabaseModule {
       module: DatabaseModule,
       imports: [
         TypeOrmModule.forRootAsync({
-          imports: [ConfigModule],
-          inject: [ConfigService],
-          useFactory: (configService: ConfigService) => {
+          imports: [EnvironmentModule],
+          inject: [EnvironmentService],
+          useFactory: (environmentService: EnvironmentService) => {
             // TODO: validate DATABASE_URL
 
             const databaseUrl =
-              config?.databaseUrl ?? configService.get<string>('DATABASE_URL')
+              config?.databaseUrl ??
+              environmentService.get<string>('DATABASE_URL')
             const postgresUrl = parse(databaseUrl!)
 
             return {

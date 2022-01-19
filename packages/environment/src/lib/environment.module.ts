@@ -16,7 +16,7 @@ export interface IConfig {
 
 @Module({})
 export class EnvironmentModule {
-  static register(config: IConfig) {
+  static register(config?: IConfig) {
     return {
       module: EnvironmentModule,
       imports: [
