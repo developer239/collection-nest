@@ -3,7 +3,6 @@ import { Module } from '@nestjs/common'
 import { TypeOrmModule } from '@nestjs/typeorm'
 import { parse } from 'pg-connection-string'
 import { ConfigModule, ConfigService } from '@nestjs/config'
-import * as Joi from 'joi'
 
 export interface IConfig {
   synchronize?: boolean
@@ -27,10 +26,6 @@ export class DatabaseModule {
           useFactory: (configService: ConfigService) => {
             try {
               const databaseUrl = configService.get<string>('DATABASE_URL')
-              Joi.object({
-                DATABASE_URL: Joi.string().required(),
-              }).validate({ DATABASE_URL: databaseUrl })
-
               const postgresUrl = parse(databaseUrl!)
 
               return {
