@@ -5,22 +5,16 @@ import cleaner from 'rollup-plugin-cleaner'
 import peerDepsExternal from 'rollup-plugin-peer-deps-external'
 import typescript from 'rollup-plugin-typescript2'
 import ttypescript from 'ttypescript'
+import json from '@rollup/plugin-json'
 
 export default {
   input: `./src/index.ts`,
   output: [
     { file: 'lib/index.js', format: 'cjs', },
   ],
-  plugins: [
-    cleaner({
-      targets: ['./lib'],
-    }),
-    peerDepsExternal(),
-    resolve(),
-    commonjs(),
-    typescript({
-      tsconfig: 'tsconfig.build.json',
-      typescript: ttypescript
-    }),
-  ],
+  plugins: [cleaner({
+    targets: ['./lib'],
+  }), peerDepsExternal(), resolve(), json(), commonjs(), typescript({
+    tsconfig: 'tsconfig.build.json', typescript: ttypescript
+  }),],
 }
