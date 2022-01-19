@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.6](https://github.com/developer239/collection-nest/compare/@collection-nest/auth@0.3.5...@collection-nest/auth@0.3.6) (2022-01-19)
+
+**Note:** Version bump only for package @collection-nest/auth
+
+
+
+
+
 ## [0.3.5](https://github.com/developer239/collection-nest/compare/@collection-nest/auth@0.3.4...@collection-nest/auth@0.3.5) (2022-01-17)
 
 **Note:** Version bump only for package @collection-nest/auth

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/developer239/collection-nest/compare/@collection-nest/database@0.2.3...@collection-nest/database@0.3.0) (2022-01-19)
+
+
+### Features
+
+* generalize all modules ([8bfbc88](https://github.com/developer239/collection-nest/commit/8bfbc886384437762dbbb1b428ef4fbfc0496fe7))
+
+
+
+
+
 ## [0.2.3](https://github.com/developer239/collection-nest/compare/@collection-nest/database@0.2.2...@collection-nest/database@0.2.3) (2022-01-19)
 
 

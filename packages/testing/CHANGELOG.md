@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/developer239/collection-nest/compare/@collection-nest/testing@0.1.7...@collection-nest/testing@0.2.0) (2022-01-19)
+
+
+### Features
+
+* generalize all modules ([8bfbc88](https://github.com/developer239/collection-nest/commit/8bfbc886384437762dbbb1b428ef4fbfc0496fe7))
+
+
+
+
+
 ## [0.1.7](https://github.com/developer239/collection-nest/compare/@collection-nest/testing@0.1.6...@collection-nest/testing@0.1.7) (2022-01-19)
 
 **Note:** Version bump only for package @collection-nest/testing

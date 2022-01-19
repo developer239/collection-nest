@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/developer239/collection-nest/compare/@collection-nest/environment@0.5.3...@collection-nest/environment@0.6.0) (2022-01-19)
+
+
+### Features
+
+* generalize all modules ([8bfbc88](https://github.com/developer239/collection-nest/commit/8bfbc886384437762dbbb1b428ef4fbfc0496fe7))
+
+
+
+
+
 ## [0.5.3](https://github.com/developer239/collection-nest/compare/@collection-nest/environment@0.5.2...@collection-nest/environment@0.5.3) (2022-01-17)
 
 **Note:** Version bump only for package @collection-nest/environment
