@@ -28,7 +28,12 @@ export class EnvironmentModule {
 
     return {
       module: EnvironmentModule,
-      imports: [ConfigModule.forRoot({ envFilePath, ...config })],
+      imports: [
+        ConfigModule.forRoot({
+          envFilePath,
+          validationSchema: config?.validationSchema,
+        }),
+      ],
       providers: [],
       exports: [],
     }
