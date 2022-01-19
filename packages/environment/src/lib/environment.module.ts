@@ -14,10 +14,10 @@ export interface IConfig {
 }
 
 @Module({})
-export class EnvModule {
+export class EnvironmentModule {
   static register(config?: IConfig) {
     return {
-      module: EnvModule,
+      module: EnvironmentModule,
       imports: [
         ConfigModule.forRoot({ envFilePath: envFilePath[NODE_ENV], ...config }),
       ],
