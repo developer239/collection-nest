@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.2](https://github.com/developer239/collection-nest/compare/@collection-nest/database@0.2.1...@collection-nest/database@0.2.2) (2022-01-19)
+
+
+### Bug Fixes
+
+* temporarily remove validation ([a6f001f](https://github.com/developer239/collection-nest/commit/a6f001f426e3ded03fd37b9651e21d0a7248558a))
+
+
+
+
+
 ## [0.2.1](https://github.com/developer239/collection-nest/compare/@collection-nest/database@0.2.0...@collection-nest/database@0.2.1) (2022-01-19)
 
 
