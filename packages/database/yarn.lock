@@ -2,13 +2,6 @@
 # yarn lockfile v1
 
 
-"@collection-nest/environment@^0.6.0":
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/@collection-nest/environment/-/environment-0.6.0.tgz#714a163031c20f495a11e495006cda8f5ff41571"
-  integrity sha512-bnWB8+Sg5Kb+1qug7IoJsBvGLByG5KrMAzXibFFsOYRPs2CO3AmpErunZbwyWpp6IFjn05ZMi4mF6JF+NhZOzg==
-  dependencies:
-    "@nestjs/config" "1.1.6"
-
 "@hapi/hoek@^9.0.0":
   version "9.2.1"
   resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-9.2.1.tgz#9551142a1980503752536b5050fd99f4a7f13b17"
