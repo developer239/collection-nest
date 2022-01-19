@@ -1,32 +1,28 @@
 import { Module } from '@nestjs/common'
 import { ConfigModule } from '@nestjs/config'
-import { EnvironmentService } from './environment.service'
 
-const filePath = {
+const envFilePath = {
   production: '.env.production',
   development: '.env.development',
 }
 
-const NODE_ENV = process.env.NODE_ENV as keyof typeof filePath
+const NODE_ENV = process.env.NODE_ENV as keyof typeof envFilePath
 
 export interface IConfig {
-  envFilePath: string
+  envFilePath?: string
   validationSchema?: any
 }
 
 @Module({})
-export class EnvironmentModule {
+export class EnvModule {
   static register(config?: IConfig) {
     return {
-      module: EnvironmentModule,
+      module: EnvModule,
       imports: [
-        ConfigModule.forRoot({
-          envFilePath: config?.envFilePath ?? filePath[NODE_ENV],
-          validationSchema: config?.validationSchema ?? undefined,
-        }),
+        ConfigModule.forRoot({ envFilePath: envFilePath[NODE_ENV], ...config }),
       ],
-      providers: [EnvironmentService],
-      exports: [EnvironmentService],
+      providers: [],
+      exports: [],
     }
   }
 }
