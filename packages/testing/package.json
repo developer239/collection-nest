@@ -1,6 +1,6 @@
 {
   "name": "@collection-nest/testing",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "license": "MIT",
   "main": "lib/index.js",
   "directories": {
@@ -29,7 +29,7 @@
     "typeorm": "0.2.41"
   },
   "devDependencies": {
-    "@collection-nest/database": "^0.2.2",
+    "@collection-nest/database": "^0.2.3",
     "@collection-nest/environment": "^0.5.2",
     "@nestjs/common": "8.0.0",
     "@nestjs/config": "1.1.6",

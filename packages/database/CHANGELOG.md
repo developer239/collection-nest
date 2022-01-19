@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.3](https://github.com/developer239/collection-nest/compare/@collection-nest/database@0.2.2...@collection-nest/database@0.2.3) (2022-01-19)
+
+
+### Bug Fixes
+
+* inject import ([388fcdd](https://github.com/developer239/collection-nest/commit/388fcdd5c8f9c8d06b5f96d6179e63edc61dd3ef))
+
+
+
+
+
 ## [0.2.2](https://github.com/developer239/collection-nest/compare/@collection-nest/database@0.2.1...@collection-nest/database@0.2.2) (2022-01-19)
 
 
