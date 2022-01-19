@@ -3,7 +3,7 @@ import { Module } from '@nestjs/common'
 import { TypeOrmModule } from '@nestjs/typeorm'
 import { parse } from 'pg-connection-string'
 import { ConfigModule, ConfigService } from '@nestjs/config'
-import Joi from 'joi'
+import * as Joi from 'joi'
 
 export interface IConfig {
   synchronize?: boolean
