@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.4](https://github.com/developer239/collection-nest/compare/@collection-nest/testing@0.1.3...@collection-nest/testing@0.1.4) (2022-01-19)
+
+
+### Bug Fixes
+
+* update testing module bootstrap function ([19199eb](https://github.com/developer239/collection-nest/commit/19199eb5db55240a4490e194ef5b2c4f0a2c24d2))
+
+
+
+
+
 ## [0.1.3](https://github.com/developer239/collection-nest/compare/@collection-nest/testing@0.1.2...@collection-nest/testing@0.1.3) (2022-01-17)
 
 

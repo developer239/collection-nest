@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/developer239/collection-nest/compare/@collection-nest/database@0.1.4...@collection-nest/database@0.2.0) (2022-01-19)
+
+
+### Features
+
+* generalize database module ([939b6a3](https://github.com/developer239/collection-nest/commit/939b6a3bcb2b1ae1ebed685a41d31f9e0a6db599))
+
+
+
+
+
 ## [0.1.4](https://github.com/developer239/collection-nest/compare/@collection-nest/database@0.1.3...@collection-nest/database@0.1.4) (2022-01-17)
 
 **Note:** Version bump only for package @collection-nest/database
