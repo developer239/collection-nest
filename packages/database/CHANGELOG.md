@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.1](https://github.com/developer239/collection-nest/compare/@collection-nest/database@0.2.0...@collection-nest/database@0.2.1) (2022-01-19)
+
+
+### Bug Fixes
+
+* joi import ([b026904](https://github.com/developer239/collection-nest/commit/b0269048c8401193861bd464c8210c35ff57ee99))
+
+
+
+
+
 # [0.2.0](https://github.com/developer239/collection-nest/compare/@collection-nest/database@0.1.4...@collection-nest/database@0.2.0) (2022-01-19)
 
 
