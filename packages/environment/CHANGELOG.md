@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/developer239/collection-nest/compare/@collection-nest/environment@0.6.0...@collection-nest/environment@0.7.0) (2022-01-19)
+
+
+### Features
+
+* use custom environment module instead of nest config ([df5c7e0](https://github.com/developer239/collection-nest/commit/df5c7e0a426a419eff314130722492163eb59611))
+
+
+
+
+
 # [0.6.0](https://github.com/developer239/collection-nest/compare/@collection-nest/environment@0.5.3...@collection-nest/environment@0.6.0) (2022-01-19)
 
 

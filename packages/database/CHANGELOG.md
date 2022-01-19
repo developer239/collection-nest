@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/developer239/collection-nest/compare/@collection-nest/database@0.3.0...@collection-nest/database@0.4.0) (2022-01-19)
+
+
+### Bug Fixes
+
+* database lockfile ([9a93db1](https://github.com/developer239/collection-nest/commit/9a93db1c77da41e87110e36df5ba4042aa6cab6e))
+
+
+### Features
+
+* use custom environment module instead of nest config ([df5c7e0](https://github.com/developer239/collection-nest/commit/df5c7e0a426a419eff314130722492163eb59611))
+
+
+
+
+
 # [0.3.0](https://github.com/developer239/collection-nest/compare/@collection-nest/database@0.2.3...@collection-nest/database@0.3.0) (2022-01-19)
 
 
