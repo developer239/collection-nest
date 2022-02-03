@@ -44,6 +44,7 @@ export abstract class BaseRepository<
       }
 
       if (shouldSkip) {
+        // @ts-ignore
         modelInstance[key] = entity[key]
       }
     }
