@@ -8,13 +8,13 @@ Collection of shareable modules for your [Nest.js](https://github.com/nestjs/nes
 
 | Tool | Package                                              | Version                                                     |
 | ---- | ---------------------------------------------------- | ----------------------------------------------------------- |
-| Core | [@collection-nest/core](packages/core) | [![@collection-nest/core][core]][core] |
+| Core | [@collection-nest/core](packages/core)               | [![@collection-nest/environment][core]][core]               |
 | Core | [@collection-nest/environment](packages/environment) | [![@collection-nest/environment][environment]][environment] |
 | Core | [@collection-nest/database](packages/database)       | [![@collection-nest/database][database]][database]          |
 | Core | [@collection-nest/testing](packages/testing)         | [![@collection-nest/testing][testing]][testing]             |
 
-[environment]: https://badge.fury.io/js/@collection-nest%2Fcore.svg
-[environment]: https://badge.fury.io/js/@collection-nest%2Fcore
+[core]: https://badge.fury.io/js/@collection-nest%2Fcore.svg
+[core]: https://badge.fury.io/js/@collection-nest%2Fcore
 [environment]: https://badge.fury.io/js/@collection-nest%2Fenvironment.svg
 [environment]: https://badge.fury.io/js/@collection-nest%2Fenvironment
 [database]: https://badge.fury.io/js/@collection-nest%2Fdatabase.svg
